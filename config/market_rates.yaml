@@ -1,0 +1,129 @@
+# Indicative market benchmarks for architectural fees (U.S., 2025-2026).
+# Educational reference only — not legal or contractual advice.
+
+regions:
+  premium:
+    label: "Premium (CA, NY, MA)"
+    hourly_multiplier: 1.4
+  high:
+    label: "High (WA, CT, NJ, CO)"
+    hourly_multiplier: 1.2
+  medium:
+    label: "Medium (TX, FL, IL, NC)"
+    hourly_multiplier: 1.0
+  standard:
+    label: "Standard (OH, MI, TN, IN)"
+    hourly_multiplier: 0.9
+  value:
+    label: "Value (AL, KY, MS)"
+    hourly_multiplier: 0.8
+
+project_types:
+  custom_residential:
+    label: "Custom Residential"
+    fee_pct_default: 10.0
+    fee_pct_min: 8.0
+    fee_pct_max: 15.0
+    default_weeks: 40
+    default_arch_sheets: 30
+  residential_renovation:
+    label: "Residential Renovation"
+    fee_pct_default: 18.0
+    fee_pct_min: 15.0
+    fee_pct_max: 25.0
+    default_weeks: 32
+    default_arch_sheets: 20
+  commercial_office:
+    label: "Commercial Office / Retail"
+    fee_pct_default: 8.0
+    fee_pct_min: 6.0
+    fee_pct_max: 10.0
+    default_weeks: 52
+    default_arch_sheets: 60
+  institutional:
+    label: "Institutional (School, Healthcare)"
+    fee_pct_default: 10.0
+    fee_pct_min: 8.0
+    fee_pct_max: 12.0
+    default_weeks: 60
+    default_arch_sheets: 100
+  warehouse_shell:
+    label: "Warehouse / Core & Shell"
+    fee_pct_default: 5.0
+    fee_pct_min: 3.0
+    fee_pct_max: 6.0
+    default_weeks: 28
+    default_arch_sheets: 25
+
+phases:
+  schematic_design:
+    label: "Schematic Design (SD)"
+    fee_pct: 15.0
+    duration_pct: 15.0
+  design_development:
+    label: "Design Development (DD)"
+    fee_pct: 20.0
+    duration_pct: 20.0
+  construction_documents:
+    label: "Construction Documents (CD)"
+    fee_pct: 40.0
+    duration_pct: 35.0
+  bidding:
+    label: "Bidding / Procurement"
+    fee_pct: 5.0
+    duration_pct: 5.0
+  construction_admin:
+    label: "Construction Administration (CA)"
+    fee_pct: 20.0
+    duration_pct: 25.0
+
+staff_roles:
+  principal:
+    label: "Principal / Partner"
+    base_hourly: 275.0
+  project_architect:
+    label: "Project Architect"
+    base_hourly: 185.0
+  project_manager:
+    label: "Project Manager"
+    base_hourly: 150.0
+  designer:
+    label: "Designer II / III"
+    base_hourly: 115.0
+  intern:
+    label: "Intern / Drafter"
+    base_hourly: 65.0
+
+overhead_multiplier: 2.8
+
+drawing_disciplines:
+  architectural:
+    label: "Architectural (A)"
+    rate_per_sheet_simple: 500.0
+    rate_per_sheet_standard: 750.0
+    rate_per_sheet_complex: 1100.0
+  structural:
+    label: "Structural (S)"
+    rate_per_sheet_simple: 600.0
+    rate_per_sheet_standard: 900.0
+    rate_per_sheet_complex: 1300.0
+  mechanical:
+    label: "Mechanical (M)"
+    rate_per_sheet_simple: 450.0
+    rate_per_sheet_standard: 700.0
+    rate_per_sheet_complex: 1000.0
+  electrical:
+    label: "Electrical (E)"
+    rate_per_sheet_simple: 400.0
+    rate_per_sheet_standard: 650.0
+    rate_per_sheet_complex: 950.0
+  plumbing:
+    label: "Plumbing (P)"
+    rate_per_sheet_simple: 400.0
+    rate_per_sheet_standard: 650.0
+    rate_per_sheet_complex: 950.0
+
+complexity_multipliers:
+  simple: 0.85
+  standard: 1.0
+  complex: 1.25
